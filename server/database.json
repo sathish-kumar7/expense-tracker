@@ -3,7 +3,7 @@
     "driver": "pg",
     "host": "localhost",
     "database": "expense_db",
-    "user": "${DB_USER}",
-    "password": "${DB_PASSWORD}"
+    "user": "postgres",
+    "password": "Password"
   }
 }

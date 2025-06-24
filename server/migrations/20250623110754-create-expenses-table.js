@@ -14,7 +14,7 @@ exports.setup = function(options, seedLink) {
   seed = seedLink;
 };
 
-exports.up = function(db) {
+exports.up = function(db, callback) {
   db.createTable('expenses', {
     id: { type: 'int', primaryKey: true, autoIncrement: true },
     description: 'string',
