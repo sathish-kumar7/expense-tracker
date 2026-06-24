@@ -4,14 +4,12 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "setup": "pnpm install && pnpm --filter server run migrate:up",
+    "dev": "pnpm --parallel --filter client --filter server run dev",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "packageManager": "pnpm@10.8.0",
-  "workspaces": [
-    "client",
-    "server"
-  ]
+  "packageManager": "pnpm@10.8.0"
 }
